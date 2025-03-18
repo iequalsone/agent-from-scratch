@@ -2,26 +2,17 @@
   "messages": [
     {
       "role": "user",
-      "content": "how is the weather?",
-      "id": "9b6e5ffd-56da-4042-a503-d292cd79d093",
-      "createdAt": "2024-11-05T19:34:16.767Z"
+      "content": "what is the weather?",
+      "id": "0869d04b-c082-4c64-91fb-b4b552d8fba9",
+      "createdAt": "2025-03-18T07:07:38.730Z"
     },
     {
       "role": "assistant",
-      "content": null,
-      "tool_calls": [
-        {
-          "id": "call_Pd2L6OWnviQmRf7RicWtvE6Y",
-          "type": "function",
-          "function": {
-            "name": "get_stuff",
-            "arguments": "{\"reasoning\":\"To provide accurate weather information.\"}"
-          }
-        }
-      ],
+      "content": "Could you please specify the location for which you would like to know the weather?",
       "refusal": null,
-      "id": "7c3e8fdd-f7f8-4103-9ac4-a361671aca41",
-      "createdAt": "2024-11-05T19:34:17.996Z"
+      "annotations": [],
+      "id": "e507bfbc-d93e-4d06-81e9-a55e893eb6d7",
+      "createdAt": "2025-03-18T07:07:40.098Z"
     }
   ]
 }
