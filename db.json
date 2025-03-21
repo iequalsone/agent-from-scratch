@@ -2,53 +2,170 @@
   "messages": [
     {
       "role": "user",
-      "content": "my name is scott",
-      "id": "27d1e15d-15ff-44a3-af2e-daae1190e216",
-      "createdAt": "2024-11-05T20:42:53.667Z"
-    },
-    {
-      "role": "assistant",
-      "content": "Nice to meet you, Scott! How can I assist you today?",
-      "refusal": null,
-      "id": "7ba683d3-0160-4d12-bd19-74b5598bd049",
-      "createdAt": "2024-11-05T20:42:54.208Z"
-    },
-    {
-      "role": "user",
-      "content": "what is the weather in in mexico city",
-      "id": "e76aafe3-903f-4c0e-8ad3-c6ebc4111ad3",
-      "createdAt": "2024-11-05T20:43:04.149Z"
+      "content": "make me a meme image from a random dad joke",
+      "id": "462dfabd-39e7-4f2d-bab8-51fc1a0a3326",
+      "createdAt": "2025-03-20T07:00:28.010Z"
     },
     {
       "role": "assistant",
       "content": null,
       "tool_calls": [
         {
-          "id": "call_PE4XnGL48FBz7y47OM63eBtY",
+          "id": "call_M3T3ExiIGlhjhJuuCaypr6HU",
           "type": "function",
           "function": {
-            "name": "get_weather",
-            "arguments": "{\"reasoning\":\"User asked for the current weather in Mexico City.\"}"
+            "name": "dad_joke",
+            "arguments": "{}"
           }
         }
       ],
       "refusal": null,
-      "id": "02bb2468-fb05-49ac-9455-20aa9cf1cb15",
-      "createdAt": "2024-11-05T20:43:04.908Z"
+      "annotations": [],
+      "id": "cad3e150-652a-4c10-b726-fad103c0dc87",
+      "createdAt": "2025-03-20T07:00:29.374Z"
     },
     {
       "role": "tool",
-      "content": "hot, 90deg",
-      "tool_call_id": "call_PE4XnGL48FBz7y47OM63eBtY",
-      "id": "954a14e2-f21f-4e6b-9471-df6c3cc8fc68",
-      "createdAt": "2024-11-05T20:43:04.912Z"
+      "content": "Hear about the new restaurant called Karma? There’s no menu: You get what you deserve.",
+      "tool_call_id": "call_M3T3ExiIGlhjhJuuCaypr6HU",
+      "id": "b0b44eab-ee4a-4899-95f3-219a0fecca6a",
+      "createdAt": "2025-03-20T07:00:29.633Z"
     },
     {
       "role": "assistant",
-      "content": "The current weather in Mexico City is hot, with a temperature of 90°F. If you need more details or have any other questions, feel free to ask!",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_NnHpCyJPOPEvkdFQa7XSP9kO",
+          "type": "function",
+          "function": {
+            "name": "generate_image",
+            "arguments": "{\"prompt\":\"A meme image featuring the dad joke: 'Hear about the new restaurant called Karma? There’s no menu: You get what you deserve.' The background should be a humorous illustration of a restaurant with a sign that says 'Karma Restaurant'. The text should be bold and easy to read, with a playful font.\"}"
+          }
+        }
+      ],
       "refusal": null,
-      "id": "1dedbb35-8a0c-41d3-97ad-e63f4edfb9eb",
-      "createdAt": "2024-11-05T20:43:05.822Z"
+      "annotations": [],
+      "id": "ab3b6131-a4ba-4841-afbc-5b7e84d5b306",
+      "createdAt": "2025-03-20T07:00:32.000Z"
+    },
+    {
+      "role": "tool",
+      "content": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-y4CUSrYN8NxnfPxcHKdTJaGf/user-WMJSR2UXnAgMhl0GYpFhJeZf/img-lI2XdDZwW6qV3cFbUlwwFYhY.png?st=2025-03-20T06%3A00%3A45Z&se=2025-03-20T08%3A00%3A45Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-03-19T19%3A29%3A07Z&ske=2025-03-20T19%3A29%3A07Z&sks=b&skv=2024-08-04&sig=zvlzsENjQIZSQTKnI/Oi/RyyLRqbMpfHYkqusoHIij4%3D",
+      "tool_call_id": "call_NnHpCyJPOPEvkdFQa7XSP9kO",
+      "id": "8a696f77-c9d0-4eb1-8b2c-55fde9ed8091",
+      "createdAt": "2025-03-20T07:00:45.167Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's your meme image featuring the dad joke:\n\n![Karma Restaurant Meme](https://oaidalleapiprodscus.blob.core.windows.net/private/org-y4CUSrYN8NxnfPxcHKdTJaGf/user-WMJSR2UXnAgMhl0GYpFhJeZf/img-lI2XdDZwW6qV3cFbUlwwFYhY.png?st=2025-03-20T06%3A00%3A45Z&se=2025-03-20T08%3A00%3A45Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-03-19T19%3A29%3A07Z&ske=2025-03-20T19%3A29%3A07Z&sks=b&skv=2024-08-04&sig=zvlzsENjQIZSQTKnI/Oi/RyyLRqbMpfHYkqusoHIij4%3D)\n\nEnjoy!",
+      "refusal": null,
+      "annotations": [],
+      "id": "717bdb7a-129b-429d-bd5b-0590187030ab",
+      "createdAt": "2025-03-20T07:00:49.934Z"
+    },
+    {
+      "role": "user",
+      "content": "I have 3 tools. Get all the posts from reddit, generate an image with a diffusion model, and get a random dad joke. Make me a prompt I can use that uses all 3 of these",
+      "id": "bfe76e0b-d9e7-4e7f-9063-378a915cbdb2",
+      "createdAt": "2025-03-20T07:03:49.726Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a prompt you can use that incorporates all three tools:\n\n---\n\n\"First, fetch the latest posts from Reddit to find a trending topic or funny story. Then, generate an image using a diffusion model that visually represents this topic or story in a humorous or engaging way. Finally, include a random dad joke related to the theme of the image to add a comedic touch. The final output should be a combination of the Reddit post, the generated image, and the dad joke.\"\n\n---\n\nFeel free to modify it as needed!",
+      "refusal": null,
+      "annotations": [],
+      "id": "41000b02-2123-4717-b1ba-2f96f285cb6d",
+      "createdAt": "2025-03-20T07:03:52.184Z"
+    },
+    {
+      "role": "user",
+      "content": "First, fetch the latest posts from Reddit to find a trending topic or funny story. Then, generate an image using a diffusion model that visually represents this topic or story in a humorous or engaging way. Finally, include a random dad joke related to the theme of the image to add a comedic touch. The final output should be a combination of the Reddit post, the generated image, and the dad joke.",
+      "id": "0fc1d759-27b5-4fd2-bb96-01825afb8164",
+      "createdAt": "2025-03-20T07:04:25.032Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_6H1Tc4xhCPkmZhrrM2rQZQ5S",
+          "type": "function",
+          "function": {
+            "name": "reddit",
+            "arguments": "{}"
+          }
+        }
+      ],
+      "refusal": null,
+      "annotations": [],
+      "id": "6a86757b-428a-4843-986a-311631354e45",
+      "createdAt": "2025-03-20T07:04:26.209Z"
+    },
+    {
+      "role": "tool",
+      "content": "[\n  {\n    \"title\": \"what is the longest play time you have on any game on steam?\",\n    \"link\": \"https://i.redd.it/pcewllrnbope1.png\",\n    \"subreddit\": \"r/Steam\",\n    \"author\": \"hoovy_gaming_27\",\n    \"upvotes\": 11020\n  },\n  {\n    \"title\": \"My neighbor set his son’s soccer goal up against my fence and the kid dented the hell out of it with missed kicks.\",\n    \"link\": \"https://i.redd.it/omjrjkg8bnpe1.jpeg\",\n    \"subreddit\": \"r/mildlyinfuriating\",\n    \"author\": \"BizarroMax\",\n    \"upvotes\": 35513\n  },\n  {\n    \"title\": \"Voter says he doesn't regret choice despite wife's ICE arrest\",\n    \"link\": \"https://www.newsweek.com/trump-voter-regret-choice-wife-ice-bradley-bartell-camila-munoz-2046988\",\n    \"subreddit\": \"r/nottheonion\",\n    \"author\": \"AravRAndG\",\n    \"upvotes\": 45135\n  },\n  {\n    \"title\": \"Trump freezes $175M of UPenn funds over trans women\",\n    \"link\": \"https://www.newsweek.com/trump-freezes-175m-upenn-funds-over-trans-women-2047100\",\n    \"subreddit\": \"r/politics\",\n    \"author\": \"DoctorOctopus_\",\n    \"upvotes\": 32857\n  },\n  {\n    \"title\": \"We are proud of dad too\",\n    \"link\": \"https://i.redd.it/50ub72865rpe1.jpeg\",\n    \"subreddit\": \"r/MadeMeSmile\",\n    \"author\": \"HentaiUwu_6969\",\n    \"upvotes\": 51904\n  },\n  {\n    \"title\": \"My neighbor's dog loves his ball\",\n    \"link\": \"https://www.reddit.com/gallery/1jfdw44\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"TheXboxLiveSlayer\",\n    \"upvotes\": 13818\n  },\n  {\n    \"title\": \"Commerce Secretary urges Fox News viewers to buy Tesla Stock\",\n    \"link\": \"https://www.mediaite.com/tv/commerce-secretary-lutnick-urges-fox-news-viewers-to-buy-tesla-stock-elon-musk-is-probably-the-best-person-to-bet-on/\",\n    \"subreddit\": \"r/nottheonion\",\n    \"author\": \"Aggressive_Sand_3951\",\n    \"upvotes\": 5954\n  },\n  {\n    \"title\": \"Caught by my friend off her cruise ship balcony last night in the Gulf of Mexico\",\n    \"link\": \"https://v.redd.it/8vsjzyeq6ope1\",\n    \"subreddit\": \"r/aliens\",\n    \"author\": \"resentement\",\n    \"upvotes\": 14957\n  },\n  {\n    \"title\": \"A lion pushes her cub without knowing it is water\",\n    \"link\": \"https://v.redd.it/dz2lzihbknpe1\",\n    \"subreddit\": \"r/interestingasfuck\",\n    \"author\": \"Economy_Elephant6200\",\n    \"upvotes\": 133482\n  },\n  {\n    \"title\": \"EU to exclude US, UK &amp; Turkey from €150bn rearmament fund\",\n    \"link\": \"https://www.ft.com/content/eb9e0ddc-8606-46f5-8758-a1b8beae14f1\",\n    \"subreddit\": \"r/europe\",\n    \"author\": \"MarsupialOk4514\",\n    \"upvotes\": 19555\n  },\n  {\n    \"title\": \"Trump’s “Gulf of America” map that he keeps right next to his desk in the Oval Office\",\n    \"link\": \"https://i.redd.it/9owylq7r4ope1.jpeg\",\n    \"subreddit\": \"r/Weird\",\n    \"author\": \"N4TETHAGR8\",\n    \"upvotes\": 29741\n  },\n  {\n    \"title\": \"Meirl\",\n    \"link\": \"https://i.redd.it/6uuromt22rpe1.jpeg\",\n    \"subreddit\": \"r/meirl\",\n    \"author\": \"Bubble_Babe_0o0o0o\",\n    \"upvotes\": 14136\n  },\n  {\n    \"title\": \"It Might Be Time to Admit the Great VR Experiment Has Failed\",\n    \"link\": \"https://www.howtogeek.com/it-might-be-time-to-admit-the-great-vr-experiment-has-failed/\",\n    \"subreddit\": \"r/technology\",\n    \"author\": \"BlueLightStruct\",\n    \"upvotes\": 15514\n  },\n  {\n    \"title\": \"Burned him\",\n    \"link\": \"https://i.redd.it/o3eiwk7inmpe1.jpeg\",\n    \"subreddit\": \"r/MurderedByWords\",\n    \"author\": \"HentaiUwu_6969\",\n    \"upvotes\": 51686\n  },\n  {\n    \"title\": \"Elon Musk on Tesla Attacks: \\\"I’ve never done anything harmful, I’ve only done productive things, this doesn't make any sense. I think there are larger forces at work as well. I mean, who’s funding and who’s coordinating it? Because this is crazy. I’ve never seen anything like this.\\\"\",\n    \"link\": \"https://v.redd.it/xckq0srmsppe1\",\n    \"subreddit\": \"r/popculture\",\n    \"author\": \"ControlCAD\",\n    \"upvotes\": 13601\n  },\n  {\n    \"title\": \"What is one movie scene that was unforgettable/and or left an impact on you?\",\n    \"link\": \"https://i.redd.it/48gqab5w4npe1.jpeg\",\n    \"subreddit\": \"r/Millennials\",\n    \"author\": \"Azaroth_Alexander\",\n    \"upvotes\": 17066\n  },\n  {\n    \"title\": \"Donald Trump Says 'Nasty' Canada 'Meant to Be 51st State'\",\n    \"link\": \"https://www.newsweek.com/donald-trump-says-nasty-canada-meant-51st-state-2046930\",\n    \"subreddit\": \"r/canada\",\n    \"author\": \"inagartenofeden\",\n    \"upvotes\": 13987\n  },\n  {\n    \"title\": \"Most expensive dog just sold for 5.7M.\",\n    \"link\": \"https://i.redd.it/nki4h6qloope1.jpeg\",\n    \"subreddit\": \"r/pics\",\n    \"author\": \"Trialtaker\",\n    \"upvotes\": 37919\n  },\n  {\n    \"title\": \"Yummy laser\",\n    \"link\": \"https://v.redd.it/5rvnpkd9qqpe1\",\n    \"subreddit\": \"r/cats\",\n    \"author\": \"Khanfringo\",\n    \"upvotes\": 20671\n  },\n  {\n    \"title\": \"Famous Lobotomy Patients - 📍Glore Psychiatric Museum\",\n    \"link\": \"https://www.reddit.com/gallery/1jf76ta\",\n    \"subreddit\": \"r/Damnthatsinteresting\",\n    \"author\": \"EfficientStranger299\",\n    \"upvotes\": 24895\n  },\n  {\n    \"title\": \"Name a show from your childhood you watched faithfully that now seems all but forgotten.\",\n    \"link\": \"https://i.redd.it/2jf35adddope1.jpeg\",\n    \"subreddit\": \"r/GenX\",\n    \"author\": \"garcon-du-soleille\",\n    \"upvotes\": 4098\n  },\n  {\n    \"title\": \"That didn't take long!\",\n    \"link\": \"https://www.reddit.com/gallery/1jf0v3m\",\n    \"subreddit\": \"r/alberta\",\n    \"author\": \"toorudez\",\n    \"upvotes\": 5987\n  },\n  {\n    \"title\": \"A reporter corrects Leavitt, clarifying that the judge was appointed by George W bush , not Barack obama\",\n    \"link\": \"https://v.redd.it/3282n4rfqope1\",\n    \"subreddit\": \"r/Fauxmoi\",\n    \"author\": \"apollo-sunfire\",\n    \"upvotes\": 41961\n  },\n  {\n    \"title\": \"Why yo my dino nuggets spinning?\",\n    \"link\": \"https://v.redd.it/d67hpqstiqpe1\",\n    \"subreddit\": \"r/interestingasfuck\",\n    \"author\": \"Pepper_Kalaki\",\n    \"upvotes\": 58059\n  },\n  {\n    \"title\": \"French Scientist Reportedly Denied U.S. Entry Due to Trump Criticism\",\n    \"link\": \"https://newrepublic.com/post/192946/french-scientist-denied-us-entry-trump-criticism\",\n    \"subreddit\": \"r/worldnews\",\n    \"author\": \"TrueRignak\",\n    \"upvotes\": 40255\n  }\n]",
+      "tool_call_id": "call_6H1Tc4xhCPkmZhrrM2rQZQ5S",
+      "id": "88c55624-3f36-427b-b771-312fa5cd51c4",
+      "createdAt": "2025-03-20T07:04:26.665Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_gPyShtY9T2vnHuDrUY2PlHCz",
+          "type": "function",
+          "function": {
+            "name": "generate_image",
+            "arguments": "{\"prompt\":\"A humorous illustration depicting a soccer goal set up against a fence, with a kid kicking a soccer ball and missing, causing a dent in the fence. The scene should be exaggerated and funny, capturing the frustration of the neighbor. Include a playful, cartoonish style.\"}"
+          }
+        }
+      ],
+      "refusal": null,
+      "annotations": [],
+      "id": "60f0dfdc-1e57-4168-8951-a42f22c373b0",
+      "createdAt": "2025-03-20T07:04:28.021Z"
+    },
+    {
+      "role": "tool",
+      "content": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-y4CUSrYN8NxnfPxcHKdTJaGf/user-WMJSR2UXnAgMhl0GYpFhJeZf/img-yFtKVq3u8srOsazrqV9RFkXx.png?st=2025-03-20T06%3A04%3A43Z&se=2025-03-20T08%3A04%3A43Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-03-19T20%3A08%3A24Z&ske=2025-03-20T20%3A08%3A24Z&sks=b&skv=2024-08-04&sig=opNpsPYwN32b5r9vxehgkCZ6XaameOdxpy2lFdShiDc%3D",
+      "tool_call_id": "call_gPyShtY9T2vnHuDrUY2PlHCz",
+      "id": "b3d69d91-7581-4319-8184-e316a8d11b5f",
+      "createdAt": "2025-03-20T07:04:44.052Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_tECZl5Jggj06DoHlZLNcm1eN",
+          "type": "function",
+          "function": {
+            "name": "dad_joke",
+            "arguments": "{}"
+          }
+        }
+      ],
+      "refusal": null,
+      "annotations": [],
+      "id": "b180f69d-d5e8-443c-8338-a9b48b53e09d",
+      "createdAt": "2025-03-20T07:04:44.903Z"
+    },
+    {
+      "role": "tool",
+      "content": "I don't trust sushi, there's something fishy about it.",
+      "tool_call_id": "call_tECZl5Jggj06DoHlZLNcm1eN",
+      "id": "dc82b3e6-fd00-43e7-9b4b-2ed11834ac4b",
+      "createdAt": "2025-03-20T07:04:45.073Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's the final output combining the Reddit post, the generated image, and a dad joke:\n\n### Reddit Post\n**Title:** My neighbor set his son’s soccer goal up against my fence and the kid dented the hell out of it with missed kicks.  \n**Subreddit:** r/mildlyinfuriating  \n**Author:** BizarroMax  \n**Upvotes:** 35,513  \n[View Post](https://i.redd.it/omjrjkg8bnpe1.jpeg)\n\n### Generated Image\n![Soccer Goal Meme](https://oaidalleapiprodscus.blob.core.windows.net/private/org-y4CUSrYN8NxnfPxcHKdTJaGf/user-WMJSR2UXnAgMhl0GYpFhJeZf/img-yFtKVq3u8srOsazrqV9RFkXx.png?st=2025-03-20T06%3A04%3A43Z&se=2025-03-20T08%3A04%3A43Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-03-19T20%3A08%3A24Z&ske=2025-03-20T20%3A08%3A24Z&sks=b&skv=2024-08-04&sig=opNpsPYwN32b5r9vxehgkCZ6XaameOdxpy2lFdShiDc%3D)\n\n### Dad Joke\n\"I don't trust sushi, there's something fishy about it.\"\n\nEnjoy the combination of humor and creativity!",
+      "refusal": null,
+      "annotations": [],
+      "id": "a636f469-05f2-4aab-b507-5f218fd19ac3",
+      "createdAt": "2025-03-20T07:04:50.779Z"
     }
   ]
 }
